@@ -1,23 +1,60 @@
 aid: ambros-therapeutics
+
 name: Ambros Therapeutics
-description: 'Ambros Therapeutics is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Ambros Therapeutics is a biotechnology company focused on developing innovative therapeutic solutions for serious diseases. Leveraging cutting‑edge research in molecular biology and immunology, Ambros aims to bring novel treatments from discovery through clinical development to patients in need. The company emphasizes robust scientific collaboration, advanced platform technologies, and a commitment to addressing unmet medical needs across oncology, rare diseases, and other critical therapeutic areas.'
+
 url: https://raw.githubusercontent.com/api-evangelist/ambros-therapeutics/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-24'
+
 modified: '2026-09-24'
+
 tags:
 - Company
-apis: []
+- Biotechnology
+- Therapeutics
+- Innovation
+- Research
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://ambrostherapeutics.com/wp-content/themes/ambros_theme/assets/images/logo.png
+
 common:
+- type: Hosts
+  url: hosts/ambros-therapeutics-hosts.yml
+- type: DomainSecurity
+  url: security/ambros-therapeutics-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/ambros-therapeutics_stock/
+  url: https://ambrostherapeutics.com/
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-09-24'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+x-enrichment:
+  date: '2026-09-24'
+  status: enriched
+  artifacts_added: 4
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
