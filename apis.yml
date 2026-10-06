@@ -17,7 +17,7 @@ specificationVersion: '0.20'
 
 created: '2026-09-24'
 
-modified: '2026-09-24'
+modified: '2026-10-06'
 
 tags:
 - Company
@@ -35,6 +35,8 @@ maintainers:
 image: https://ambrostherapeutics.com/wp-content/themes/ambros_theme/assets/images/logo.png
 
 common:
+- url: https://ambrostherapeutics.com/news/
+  type: Blog
 - type: Hosts
   url: hosts/ambros-therapeutics-hosts.yml
 - type: DomainSecurity
